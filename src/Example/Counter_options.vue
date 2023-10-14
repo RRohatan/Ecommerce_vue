@@ -1,0 +1,26 @@
+<script  lang="ts">
+export default {
+    data(){
+        return{
+            count: 0
+        }
+    },
+    methods: {
+        increase(){
+            this.count +=3;
+        }
+    },
+    mounted(){
+        console.log( "El valor inicial del contador es " + this.count);
+    }
+ }
+</script>
+
+<template>
+    <h1>{{ count }}</h1>
+    <button @click="increase">
+     aumentar contador
+    </button>
+       
+  
+</template>
